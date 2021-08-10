@@ -1,0 +1,27 @@
+# Cool Window titles
+set -g set-titles-string "tmux:#I #W"
+setw -g window-status-format "#[bg=NONE]#[fg=colour240] #I #[bg=NONE]#[fg=colour240] #W "
+setw -g window-status-current-format "#[fg=colour246]#[bg=NONE] #I #[bg=NONE]#[fg=colour246] #W#F "
+
+# Window/Pane count index
+set -g base-index 1
+setw -g pane-base-index 1
+set -g renumber-windows on
+
+# Panes/Messages display times
+set -g display-panes-time 800
+set -g display-time 1000
+
+# Activity
+set -g monitor-activity on
+set -g visual-activity on
+
+# Status Bar Design
+set -g status-bg default
+set -g status-fg white
+set -g status-justify right
+set -g status-left-length 20
+set -g status-left '#[fg=colour221,bold]   #S '
+set -g status-right ''
+set -g window-status-format "#[fg=colour79] #I #W "
+set -g window-status-current-format "#[fg=colour74,bg=colour16,bold] #I #W "
